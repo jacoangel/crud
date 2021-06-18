@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id="addCar">
+        <div class="addCar">
+            <div class="field">
+                <label for="name">Nombre: </label>
+                <input type="text" placeholder="Nombre del automovil" id="name">   
+            </div>
+
+            <div class="field">
+                <label for="model"> Modelo: </label>
+                <input type="text" placeholder="modelo del auto" id="model">
+            </div>
+
+            <div class="field">
+                <label for="color"> Color: </label>
+                <input type="text" placeholder="color" id="color">
+            </div>
+
+            <div class="field">
+                <label for="doors"> Puertas: </label>
+                <input type="text" placeholder="numero de puertas" id="doors">
+            
+            </div>
+
+            <div class="field">
+                <label for="brand"> Marca: </label>
+                <input type="text" placeholder="Marca" id="brand">
+            </div>
+        </div>
+        <button type="submit" class="submitbtn" id="submitbtn">
+            Agregar
+        </button>
+    </form>
+    <div id="carsList"></div>
+    <script src="crud.js"></script>
+</body>
+</html>
