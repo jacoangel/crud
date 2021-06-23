@@ -53,11 +53,16 @@ const renderList = () => {
         const doorsCarsDiv = document.createElement("h4")
         const colorCarsDiv = document.createElement("h4")
         const brandCarsDiv = document.createElement("h4")
-        nameCarsDiv.innerText = `${cars.name}`
-        modelCarsDiv.innerText = `${cars.model}`
-        doorsCarsDiv.innerText = `${cars.doors}`
-        colorCarsDiv.innerText = `${cars.color}`
-        brandCarsDiv.innerText = `${cars.brand}`
+        nameCarsDiv.innerText = "Nombre: " + `${cars.name}`
+        modelCarsDiv.innerText = "Model: " +`${cars.model}`
+        doorsCarsDiv.innerText = "Doors: " +`${cars.doors}`
+        colorCarsDiv.innerText = "Color: " +`${cars.color}`
+        brandCarsDiv.innerText = "Brand: " +`${cars.brand}`
+        nameCarsDiv.setAttribute("class", "carName")
+        modelCarsDiv.setAttribute("class", "carModel")
+        doorsCarsDiv.setAttribute("class", "carDoor")
+        colorCarsDiv.setAttribute("class", "carColor")
+        brandCarsDiv.setAttribute("class", "carBrand")
         
         carsInfoDiv.appendChild(nameCarsDiv)
         carsInfoDiv.appendChild(modelCarsDiv)
@@ -92,6 +97,7 @@ const renderList = () => {
       document.getElementById("doors").value = cars.doors
       document.getElementById("color").value = cars.color
       document.getElementById("brand").value = cars.brand
+      deleteCar()
       renderList()
     }
     

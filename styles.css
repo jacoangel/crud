@@ -2,26 +2,45 @@ form div {
     display: flex;
     align-items: center;
     flex-direction: column;
+    background-color: rgb(155, 155, 184);
 }
 form button {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
-form {
-    width: 35vw;
-}
+
 .carItem {
+    display: flex;
+    flex-direction: column;
     border: 2px solid black;
     background-color: rgb(155, 155, 184);
+    justify-content: end;
 }
-.carInfo {
-    border: 2px solid black;
-}
+
 button {
     font-family: sans-serif;
     background-color: blue;
+    cursor: pointer;
 }
 body{
     font-family: sans-serif;
+}
+.carInfo {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.divsubmitBtn {
+    display: flex;
+    align-items: center;
+    background-color: rgb(155, 155, 184);
+}
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
