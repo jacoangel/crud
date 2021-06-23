@@ -140,4 +140,4 @@ const deleteCar = index => {
   renderList()
 } 
 
-document.addEventListener("DOMContentLoaded", renderList)
+document.addEventListener("DOMContentLoaded", carsStorageObject)
